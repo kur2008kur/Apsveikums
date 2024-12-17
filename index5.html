@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziemassvētku Kartīte</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #A1C6EA, #2c3e50); /* Gaiši zils līdz tumši zils */
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Sniegavīrs fons (emodži) */
+        .snowman-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            z-index: 1;
+        }
+
+        .card {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Balta caurspīdīga kartīte */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card h1 {
+            color: #e74c3c;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .tree {
+            width: 300px; /* Palielināta Ziemassvētku egle */
+            height: 300px;
+            background-image: url('https://www.example.com/christmas-tree.png'); /* Aizstājiet ar sava koka attēlu URL */
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+        }
+
+        /* Sniega animācija */
+        @keyframes snowFall {
+            0% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: white;
+            font-size: 1.5rem; /* Mazāki sniega punkti */
+            z-index: 1000;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: snowFall 5s linear infinite;
+        }
+
+        /* Randomizēti kritošie sniega punkti */
+        .snowflake:nth-child(odd) {
+            animation-duration: 7s;
+            animation-delay: 0s;
+        }
+
+        .snowflake:nth-child(even) {
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sniegavīrs fons (emodži) -->
+    <div class="snowman-background">
+        ☃️
+    </div>
+
+    <div class="card">
+        <h1>Merry Christmas! 🎄</h1>
+        <!-- Liela Ziemassvētku egle centrā -->
+        <div class="tree"></div>
+        <p>Wishing you a joyful holiday season filled with love, peace, and happiness. 🎁</p>
+        <div class="footer">
+            <p>From our family to yours! 💖</p>
+        </div>
+    </div>
+
+    <!-- 50 balti kritošie sniega punkti -->
+    <div class="snowflakes">
+        <!-- 50 sniega punkti -->
+        <div class="snowflake" style="left: 10%; animation-delay: 0s;">•</div>
+        <div class="snowflake" style="left: 20%; animation-delay: 1s;">•</div>
+        <div class="snowflake" style="left: 30%; animation-delay: 2s;">•</div>
+        <div class="snowflake" style="left: 40%; animation-delay: 3s;">•</div>
+        <div class="snowflake" style="left: 50%; animation-delay: 4s;">•</div>
+        <div class="snowflake" style="left: 60%; animation-delay: 5s;">•</div>
+        <div class="snowflake" style="left: 70%; animation-delay: 6s;">•</div>
+        <div class="snowflake" style="left: 80%; animation-delay: 7s;">•</div>
+        <div class="snowflake" style="left: 90%; animation-delay: 8s;">•</div>
+        <div class="snowflake" style="left: 15%; animation-delay: 2s;">•</div>
+        <div class="snowflake" style="left: 25%; animation-delay: 4s;">•</div>
+        <div class="snowflake" style="left: 35%; animation-delay: 6s;">•</div>
+        <div class="snowflake" style="left: 45%; animation-delay: 1s;">•</div>
+        <div class="snowflake" style="left: 55%; animation-delay: 3s;">•</div>
+        <div class="snowflake" style="left: 65%; animation-delay: 5s;">•</div>
+        <div class="snowflake" style="left: 5%; animation-delay: 0s;">•</div>
+        <div class="snowflake" style="left: 10%; animation-delay: 1s;">•</div>
+        <div class="snowflake" style="left: 20%; animation-delay: 2s;">•</div>
+        <div class="snowflake" style="left: 30%; animation-delay: 3s;">•</div>
+        <div class="snowflake" style="left: 40%; animation-delay: 4s;">•</div>
+        <div class="snowflake" style="left: 50%; animation-delay: 5s;">•</div>
+        <div class="snowflake" style="left: 60%; animation-delay: 6s;">•</div>
+        <div class="snowflake" style="left: 70%; animation-delay: 7s;">•</div>
+        <div class="snowflake" style="left: 80%; animation-delay: 8s;">•</div>
+        <div class="snowflake" style="left: 90%; animation-delay: 9s;">•</div>
+        <div class="snowflake" style="left: 20%; animation-delay: 1s;">•</div>
+        <div class="snowflake" style="left: 30%; animation-delay: 2s;">•</div>
+        <div class="snowflake" style="left: 40%; animation-delay: 3s;">•</div>
+        <div class="snowflake" style="left: 50%; animation-delay: 4s;">•</div>
+        <div class="snowflake" style="left: 60%; animation-delay: 5s;">•</div>
+        <div class="snowflake" style="left: 70%; animation-delay: 6s;">•</div>
+        <div class="snowflake" style="left: 80%; animation-delay: 7s;">•</div>
+        <div class="snowflake" style="left: 90%; animation-delay: 8s;">•</div>
+        <div class="snowflake" style="left: 10%; animation-delay: 0s;">•</div>
+        <div class="snowflake" style="left: 15%; animation-delay: 1s;">•</div>
+        <div class="snowflake" style="left: 20%; animation-delay: 2s;">•</div>
+        <div class="snowflake" style="left: 25%; animation-delay: 3s;">•</div>
+        <div class="snowflake" style="left: 30%; animation-delay: 4s;">•</div>
+        <div class="snowflake" style="left: 35%; animation-delay: 5s;">•</div>
+        <div class="snowflake" style="left: 40%; animation-delay: 6s;">•</div>
+        <div class="snowflake" style="left: 45%; animation-delay: 7s;">•</div>
+        <div class="snowflake" style="left: 50%; animation-delay: 8s;">•</div>
+        <div class="snowflake" style="left: 55%; animation-delay: 9s;">•</div>
+        <div class="snowflake" style="left: 60%; animation-delay: 10s;">•</div>
+        <div class="snowflake" style="left: 65%; animation-delay: 11s;">•</div>
+        <div class="snowflake" style="left: 70%; animation-delay: 12s;">•</div>
+        <div class="snowflake" style="left: 75%; animation-delay: 13s;">•</div>
+        <div class="snowflake" style="left: 80%; animation-delay: 14s;">•</div>
+        <div class="snowflake" style="left: 85%; animation-delay: 15s;">•</div>
+        <div class="snowflake" style="left: 90%; animation-delay: 16s;">•</div>
+    </div>
+
+</body>
+</html>
